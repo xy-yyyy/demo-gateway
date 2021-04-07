@@ -1,0 +1,35 @@
+server:
+  port: 9000
+#开启 Feign 对 Sentinel 的支持
+#feign:
+#  sentinel:
+#    enabled: true
+spring:
+  profiles:
+    active: test
+  application:
+    name: demo-gateway
+  main:
+    allow-bean-definition-overriding: true
+
+  cloud:
+   gateway:
+    discovery:
+     locator:
+      # 让gateway通过服务发现组件找到其他的微服务
+      enabled: true
+      lower-case-service-id: true
+---
+spring:
+  profiles: test
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 127.0.0.1:8848
+---
+spring:
+  profiles: dev
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 127.0.0.1:8848

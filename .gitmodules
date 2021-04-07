@@ -1,0 +1,15 @@
+[submodule "demo-basic"]
+	path = demo-basic
+	url = https://gitee.com/xy-yyyy/demo-basic.git
+[submodule "demo-order"]
+	path = demo-order
+	url = https://gitee.com/xy-yyyy/demo-order.git
+[submodule "demo-user"]
+	path = demo-user
+	url = https://gitee.com/xy-yyyy/demo-user.git
+[submodule "demo-dubbo-public-api"]
+	path = demo-dubbo-public-api
+	url = https://gitee.com/xy-yyyy/demo-dubbo-public-api.git
+[submodule "demo-gateway"]
+	path = demo-gateway
+	url = https://gitee.com/xy-yyyy/demo-gateway.git
